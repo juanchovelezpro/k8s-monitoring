@@ -5,3 +5,4 @@ resources:
   - kube-prometheus-stack.yaml
   - ingress-nginx.yaml
   - weave-gitops.yaml
+  - k8s-dashboard.yaml

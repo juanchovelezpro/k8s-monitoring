@@ -1,0 +1,12 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: k8s-dashboard
+  namespace: monitoring
+spec:
+  values:
+    ingress:
+      className: nginx
+      hosts:
+        - k8s-dashboard.dev.devops.com
