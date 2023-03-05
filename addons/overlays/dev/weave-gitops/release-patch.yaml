@@ -7,6 +7,7 @@ spec:
   values:
     ingress:
       enabled: true
+      className: nginx
       hosts:
       - host: gitops.dev.devops.com
         paths:
