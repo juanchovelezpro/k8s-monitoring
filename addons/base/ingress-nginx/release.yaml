@@ -12,12 +12,10 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: ingress-nginx
-        namespace: flux-system
   interval: 1m0s
   install:
     remediation:
       retries: 3
-    createNamespace: true
   upgrade:
     remediation:
       retries: 3
