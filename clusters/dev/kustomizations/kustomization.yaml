@@ -7,3 +7,4 @@ resources:
   - weave-gitops.yaml
   - k8s-dashboard.yaml
   - cert-manager.yaml
+  - issuers.yaml
