@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./addons/overlays/dev/ingess-nginx
+  path: ./addons/overlays/dev/ingress-nginx
   prune: true
   sourceRef:
     kind: GitRepository
