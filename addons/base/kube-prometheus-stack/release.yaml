@@ -30,16 +30,19 @@ spec:
         enabled: true
       
       prometheusSpec:
-      
-        serviceMonitorNamespaceSelector: {}
-        serviceMonitorSelector:
-          matchLabels:
-            app.kubernetes.io/component: controller
 
-        podMonitorNamespaceSelector: {}
-        podMonitorSelector:
-          matchLabels:
-            app.kubernetes.io/component: monitoring
+        podMonitorNamespaceSelector:
+          any: true
+        podMonitorSelector: {}
+        podMonitorSelectorNilUsesHelmValues: false
+        ruleNamespaceSelector:
+          any: true
+        ruleSelector: {}
+        ruleSelectorNilUsesHelmValues: false
+        serviceMonitorNamespaceSelector:
+          any: true
+        serviceMonitorSelector: {}
+        serviceMonitorSelectorNilUsesHelmValues: false
 
         scrapeInterval: "10s"
         retention: 15d
