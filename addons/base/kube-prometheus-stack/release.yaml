@@ -27,10 +27,12 @@ spec:
         enabled: true
     prometheus:
 
+      serviceMonitorNamespaceSelector: {}
       serviceMonitorSelector:
         matchLabels:
           app.kubernetes.io/component: controller
 
+      podMonitorNamespaceSelector: {}
       podMonitorSelector:
         matchLabels:
           app.kubernetes.io/component: monitoring
