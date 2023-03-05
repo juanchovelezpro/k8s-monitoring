@@ -8,5 +8,9 @@ spec:
   values:
     ingress:
       className: nginx
-      hosts:
-        - k8s-dashboard.dev.devops.com
+      annotations:
+        cert-manager.io/cluster-issuer: "letsencrypt"
+      tls:
+      - hosts:
+          - k8s-dashboard.dev.devops.com
+        secretName: k8s-dashboard-tls
