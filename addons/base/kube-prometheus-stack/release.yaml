@@ -30,19 +30,10 @@ spec:
         enabled: true
       
       prometheusSpec:
-
-        podMonitorNamespaceSelector:
-          any: true
+        podMonitorNamespaceSelector: {}
         podMonitorSelector: {}
-        podMonitorSelectorNilUsesHelmValues: false
-        ruleNamespaceSelector:
-          any: true
-        ruleSelector: {}
-        ruleSelectorNilUsesHelmValues: false
-        serviceMonitorNamespaceSelector:
-          any: true
+        serviceMonitorNamespaceSelector: {}
         serviceMonitorSelector: {}
-        serviceMonitorSelectorNilUsesHelmValues: false
 
         scrapeInterval: "10s"
         retention: 15d
