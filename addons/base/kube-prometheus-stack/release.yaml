@@ -26,21 +26,21 @@ spec:
       ingress:
         enabled: true
     prometheus:
-
-      serviceMonitorNamespaceSelector: {}
-      serviceMonitorSelector:
-        matchLabels:
-          app.kubernetes.io/component: controller
-
-      podMonitorNamespaceSelector: {}
-      podMonitorSelector:
-        matchLabels:
-          app.kubernetes.io/component: monitoring
-
       ingress:
         enabled: true
       
       prometheusSpec:
+      
+        serviceMonitorNamespaceSelector: {}
+        serviceMonitorSelector:
+          matchLabels:
+            app.kubernetes.io/component: controller
+
+        podMonitorNamespaceSelector: {}
+        podMonitorSelector:
+          matchLabels:
+            app.kubernetes.io/component: monitoring
+
         scrapeInterval: "10s"
         retention: 15d
         storageSpec:
