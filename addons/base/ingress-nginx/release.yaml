@@ -19,5 +19,10 @@ spec:
   upgrade:
     remediation:
       retries: 3
-    
+  values:
+    controller:
+      metrics:
+        enabled: true
+        serviceMonitor:
+          enabled: true
 

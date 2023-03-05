@@ -26,6 +26,18 @@ spec:
       ingress:
         enabled: true
     prometheus:
+
+      additionalServiceMonitors:
+        - name: "ingress-nginx-monitor"
+          selector:
+            matchLabels:
+              app.kubernetes.io/name: ingress-nginx
+          namespaceSelector:
+            matchNames:
+              - ingress-nginx
+          endpoints:
+            - port: "metrics"
+
       ingress:
         enabled: true
       

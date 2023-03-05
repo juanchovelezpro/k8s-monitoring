@@ -17,3 +17,4 @@ spec:
         ingressClassName: nginx
         hosts: 
           - prometheus.dev.devops.com
+
