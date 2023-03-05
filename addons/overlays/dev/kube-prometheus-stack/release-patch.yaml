@@ -11,3 +11,9 @@ spec:
         ingressClassName: nginx
         hosts:
           - grafana.dev.devops.com
+
+    prometheus:
+      ingress:
+        ingressClassName: nginx
+        hosts: 
+          - prometheus.dev.devops.com

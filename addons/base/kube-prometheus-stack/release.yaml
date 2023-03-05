@@ -25,3 +25,17 @@ spec:
     grafana:
       ingress:
         enabled: true
+    prometheus:
+      ingress:
+        enabled: true
+      
+      prometheusSpec:
+        scrapeInterval: "10s"
+        retention: 15d
+        storageSpec:
+          volumeClaimTemplate:
+            spec:
+              storageClassName: standard
+              resources:
+                requests:
+                  storage: 10Gi
