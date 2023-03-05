@@ -6,3 +6,4 @@ resources:
   - ingress-nginx.yaml
   - weave-gitops.yaml
   - k8s-dashboard.yaml
+  - cert-manager.yaml
