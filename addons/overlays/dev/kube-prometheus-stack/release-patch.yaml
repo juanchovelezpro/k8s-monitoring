@@ -1,0 +1,13 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: monitoring
+  namespace: monitoring
+spec:
+  values:
+    grafana:
+      ingress:
+        ingressClassName: nginx
+        hosts:
+          - grafana.dev.devops.com
