@@ -25,6 +25,3 @@ spec:
         enabled: true
         serviceMonitor:
           enabled: true
-      admissionWebhooks:
-        enabled: false
-
