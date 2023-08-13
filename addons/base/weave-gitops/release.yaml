@@ -13,6 +13,11 @@ spec:
         name: weave-gitops
   interval: 1m0s
   values:
+    envVars:
+      - name: WEAVE_GITOPS_FEATURE_TENANCY
+        value: "true"
+      - name: WEAVE_GITOPS_FEATURE_CLUSTER
+        value: "true"
     adminUser:
       create: true
       username: admin
