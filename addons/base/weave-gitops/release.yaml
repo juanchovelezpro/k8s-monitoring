@@ -20,7 +20,8 @@ spec:
         value: "true"
       - name: WEAVE_GITOPS_FEATURE_OIDC_BUTTON_LABEL
         value: "Login with Microsoft"
-    adminUser:
-      create: true
-      username: admin
-      passwordHash: $2a$10$atieM8fxdqfHD8SL8sNqDeudvsC1UgtwRGSDzHaP2kybbHb50cUDy
+    
+    logLevel: debug
+
+    additionalArgs:
+      - "--auth-methods=oidc"
