@@ -8,10 +8,11 @@ spec:
   chart:
     spec:
       chart: kubernetes-dashboard
-      reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
         name: k8s-dashboard
+        namespace: monitoring
+      version: 7.0.3
   interval: 1m0s
   values:
     ingress:
@@ -19,4 +20,10 @@ spec:
 
     serviceMonitor:
       enabled: true
+
+    nginx:
+      enabled: false
+    
+    cert-manager:
+      enabled: false
 
