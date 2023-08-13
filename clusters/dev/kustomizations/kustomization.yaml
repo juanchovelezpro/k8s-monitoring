@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - namespaces.yaml
   - kube-prometheus-stack.yaml
+  - metrics-server.yaml
   - ingress-nginx.yaml
   - weave-gitops.yaml
   - k8s-dashboard.yaml
