@@ -21,8 +21,9 @@ spec:
     remediation:
       retries: 3
   values:
-    ingress:
-      enabled: true
+    app:
+      ingress:
+        enabled: true
 
     serviceMonitor:
       enabled: true
