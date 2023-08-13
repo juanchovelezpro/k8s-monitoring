@@ -32,4 +32,7 @@ spec:
     
     cert-manager:
       enabled: false
+    
+    metrics-server:
+      enabled: false
 
