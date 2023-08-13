@@ -14,3 +14,12 @@ spec:
         namespace: kube-system
       version: 3.11.0
   interval: 1m0s
+  install:
+    remediation:
+      retries: 3
+  upgrade:
+    remediation:
+      retries: 3
+  values:
+    args:
+    - --kubelet-insecure-tls
