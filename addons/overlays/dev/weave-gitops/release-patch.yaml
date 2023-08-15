@@ -9,7 +9,7 @@ spec:
       enabled: true
       className: nginx
       hosts:
-      - host: localhost
+      - host: gitops.dev.devops.com
         paths:
         - path: /
           pathType: Prefix
