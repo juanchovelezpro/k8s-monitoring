@@ -23,7 +23,7 @@ spec:
     
     logLevel: debug
 
-    additionalArgs:
-      - "--auth-methods=oidc"
+    # additionalArgs:
+    #   - "--auth-methods=oidc"
 
     impersonationResourceNames: ["wego-admin"]
