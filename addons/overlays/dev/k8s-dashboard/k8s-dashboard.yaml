@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./addons/overlays/dev/k8s-dashboard
+  path: ./addons/base/k8s-dashboard
   prune: true
   sourceRef:
     kind: GitRepository
