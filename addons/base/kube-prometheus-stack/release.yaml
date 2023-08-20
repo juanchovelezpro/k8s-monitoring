@@ -25,9 +25,15 @@ spec:
     grafana:
       ingress:
         enabled: true
+        ingressClassName: ${INGRESS_CLASS}
+        hosts:
+          - grafana.${DOMAIN}
     prometheus:
       ingress:
         enabled: true
+        ingressClassName: ${INGRESS_CLASS}
+        hosts:
+          - prometheus.${DOMAIN}
       
       prometheusSpec:
         podMonitorNamespaceSelector: {}

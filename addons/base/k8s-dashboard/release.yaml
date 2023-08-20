@@ -12,7 +12,7 @@ spec:
         kind: HelmRepository
         name: k8s-dashboard
         namespace: monitoring
-      version: 7.0.3
+      version: 6.0.8
   interval: 1m0s
   install:
     remediation:
@@ -23,7 +23,9 @@ spec:
   values:
     app:
       ingress:
-        enabled: true
+        ingressClassName: ${INGRESS_CLASS}
+        hosts:
+        - k8s-dashboard.${DOMAIN}
 
     serviceMonitor:
       enabled: true
