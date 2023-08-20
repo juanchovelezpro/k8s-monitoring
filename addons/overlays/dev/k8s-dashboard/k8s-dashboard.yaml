@@ -12,4 +12,7 @@ spec:
     kind: GitRepository
     name: flux-system
     namespace: flux-system
-
+  postBuild:
+    substitute:
+      INGRESS_CLASS: nginx
+      DOMAIN: dev.devops.com

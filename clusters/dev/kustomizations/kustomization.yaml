@@ -6,5 +6,5 @@ resources:
   - metrics-server.yaml
   - ingress-nginx.yaml
   - weave-gitops.yaml
-  - k8s-dashboard.yaml
+  -  ../../../addons/overlays/dev/k8s-dashboard
   - cert-manager.yaml

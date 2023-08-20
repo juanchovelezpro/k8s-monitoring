@@ -21,11 +21,10 @@ spec:
     remediation:
       retries: 3
   values:
-    app:
-      ingress:
-        ingressClassName: ${INGRESS_CLASS}
-        hosts:
-        - k8s-dashboard.${DOMAIN}
+    ingress:
+      ingressClassName: ${INGRESS_CLASS}
+      hosts:
+      - k8s-dashboard.${DOMAIN}
 
     serviceMonitor:
       enabled: true
