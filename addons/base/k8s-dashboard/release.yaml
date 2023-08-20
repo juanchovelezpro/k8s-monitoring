@@ -22,6 +22,7 @@ spec:
       retries: 3
   values:
     ingress:
+      enabled: true
       ingressClassName: ${INGRESS_CLASS}
       hosts:
       - k8s-dashboard.${DOMAIN}
